@@ -4,7 +4,7 @@
 
 ## What is this
 
-This is a proof of script to brute-force the encryption key used in Phobos ransomware. More information is available in the [article](https://cert.pl/en/posts/2023/02/breaking-phobos/) that describes our thought process behind it.
+This is a proof of script to brute-force the encryption key used in Phobos ransomware. **Please keep in mind this has never been successfully used in real life scenario so far.** More information is available in the [article](https://cert.pl/en/posts/2023/02/breaking-phobos/) that describes our thought process behind it.
 
 ---
 
