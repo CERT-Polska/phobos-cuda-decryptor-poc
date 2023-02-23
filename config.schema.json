@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Config",
+    "definitions": {
+        "Config": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pid": {
+                    "type": "integer"
+                },
+                "tid": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "gettickcount": {
+                    "$ref": "#/definitions/Range"
+                },
+                "filetime": {
+                    "$ref": "#/definitions/Range"
+                },
+                "perfcounter": {
+                    "$ref": "#/definitions/Range"
+                }
+            },
+            "required": [
+                "filetime",
+                "gettickcount",
+                "perfcounter",
+                "pid",
+                "tid"
+            ],
+            "title": "Config"
+        },
+        "Range": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "min": {
+                    "type": "number"
+                },
+                "max": {
+                    "type": "number"
+                },
+                "step": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "max",
+                "min"
+            ],
+            "title": "Range"
+        }
+    }
+}
