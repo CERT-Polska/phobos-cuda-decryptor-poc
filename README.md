@@ -6,8 +6,6 @@
 
 This is a proof of script to brute-force the encryption key used in Phobos ransomware. **Please keep in mind this has never been successfully used in real life scenario so far.** More information is available in the [article](https://cert.pl/en/posts/2023/02/breaking-phobos/) that describes our thought process behind it.
 
----
-
 ## Building
 
 You'll need a CUDA-compatible GPU as well as the CUDA compilation tools. Turing architecture worked best for us but it's possible that using a newer/older one could have some benefits or work better for you.
