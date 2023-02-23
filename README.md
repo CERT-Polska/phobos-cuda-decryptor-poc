@@ -25,7 +25,7 @@ To get the estimate on total keyspace run:
 ./brute.exe keyspace sample_data/config.json
 ```
 
-This will give you the total number of needed of iterations you'll need to perform in the next step.
+This will give you the total number of needed iterations you'll need to perform in the next step.
 
 
 To run the cracking process:
@@ -72,7 +72,7 @@ Found... something?
 ac9f6d86f7cc156a40601972c4257c548a1c885b4bc3f461c988cae68505eb55
 ```
 
-If you really want to make a serious attempt at using this, be sure to set the `CUDA_VISIBLE_DEVICES` envvar, and fine-tine the `STREAM_NO` and `BATCH_SIZE` consts.
+If you really want to make a serious attempt at using this, be sure to set the `CUDA_VISIBLE_DEVICES` envvar, and fine-tune the `STREAM_NO` and `BATCH_SIZE` consts.
 
 ## Credits
 
