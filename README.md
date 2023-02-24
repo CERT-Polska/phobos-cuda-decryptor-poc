@@ -11,7 +11,7 @@ This is a proof of script to brute-force the encryption key used in Phobos ranso
 You'll need a CUDA-compatible GPU as well as the CUDA compilation tools. Turing architecture worked best for us but it's possible that using a newer/older one could have some benefits or work better for you.
 
 ```shell
-nvcc bruteforce_range.cpp main.cu sha256.cu -O3 -rdc=true --gpu-architecture=compute_75 --gpu-code=sm_75 -o brute.exe
+nvcc bruteforce_range.cpp main.cu aes256.cu -O3 -rdc=true --gpu-architecture=compute_75 --gpu-code=sm_75 -o brute.exe
 ```
 
 ## Running
@@ -31,7 +31,7 @@ This will give you the total number of needed iterations you'll need to perform 
 To run the cracking process:
 ```shell
 # ./brute.exe crack <config file> <cleartext file> <encrypted file> <start_step> <end_step>
-./brute.exe crack config.json tofu.jpg tofu.enc 1 603
+./brute.exe crack sample_data/config.json sample_data/tofu.jpg sample_data/tofu.enc 1 603
 ```
 
 ```cmd
